@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0; 
+    list-style: none;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    background: linear-gradient(
+        45deg, rgb(0, 119, 255)10% , rgb(125, 4, 238) 50%);
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      min-width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+main.container{
+    background-color: white;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow:5px 5px 15px rgba(0, 0,0, 0.9);
+    border-radius: 8px;
+}
+
+main h1{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position:relative;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+main h1 ::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgb(0, 119, 255) , rgb(125, 4, 238) );
+    }
+
+.input-field{
+   position: relative;
+
+}
+
+form .input-field, p{
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:  rgb(0, 0, 0.2, 0.2);
+
+}
+
+.input-field .underline::after {
+    
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0, 0.7 );
+}
+
+.input-field input::placeholder{
+    color: rgb(0, 0, 0, 0.5);
+}
+.botao{
+    color: white;
+    background: linear-gradient(45deg, rgb(0, 119, 255) , rgb(125, 4, 238));
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-align: center;
+    letter-spacing: 0.5px; 
+    cursor: pointer;
+    box-shadow:  2px 2px 5px rgb(0, 0, 0);
+    transition: all 0,3s ease;
+
+}
+
+div.botao2{
+    background: linear-gradient(45deg, rgb(0, 119, 255) , rgb(125, 4, 238));
+    text-align: center;
+    letter-spacing: 0.9px; 
+    cursor: pointer;
+    box-shadow:  2px 2px 5px rgb(0, 0, 0);
+    padding: 0.2rem;
+    border-radius: 4px;
+    text-decoration-line: none ;
+   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+    
+   
+}
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, rgb(255, 249, 255) , rgb(222, 248, 255));
+
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0, 0.5rem;
+    width: 20px;     
+}
+.footer .social-field a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);   
+    cursor: pointer;
+}
+.footer .social-field.google{
+    background: linear-gradient(to left, #4285fa, #34a853, #fbbc05, #ea4335);
+
+}
+
+.footer .social-field.facebook{
+    background: linear-gradient(#4285fa, #0059ff);
+    
+}
+
+.footer .cadastro{
+    background-image: linear-gradient(45deg, rgb(0, 119, 255) , rgb(125, 4, 238));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+    
+}
+.footer .senha {
+    text-decoration-line: none ;
+    background-image: linear-gradient(45deg, rgb(0, 119, 255) , rgb(125, 4, 238));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+   
+
+}
+
+.footer .cadastro, .senha{
+    padding: 0.2rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    
+}
+.footer span{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+      
+   
+}
+
+
+.facebook{
+    background: linear-gradient(#4285fa, #0059ff);
+}
+
+
+.google{
+    background: linear-gradient(to left, #4285fa, #34a853, #fbbc05, #ea4335);
+}
+
+.social-field.instagram{
+    background: linear-gradient(to left,black);
+}
